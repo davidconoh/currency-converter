@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!--
+    Copyright (c) 2018 David C. Onoh
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="canonical" href="https://davidconoh.github.io/currency-converter">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-text text-center">Currency Converter</h1>
+        <div class="container">
+            <h3 class="text-right"><a class="repo-link" href="https://github.com/davidconoh/currency-converter"><i class="fab fa-github"></i></a></h3>
+        </div>
+    </header>
+
+    <section class="main container">
+
+        <div>
+            <div class="row container">
+                <h2 id="dateTime" class="col"></h2>
+                <button id="refreshButton" class="btn btn-primary">Refresh</button>
+            </div>
+        </div>
+
+        <form id="conversionApp">
+            <label class="text-center text-primary">All text fields with asterisks (<span>*</span>) are required.</label>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="required" for="fromCurrency">From:</label>
+                    <select class="form-control" id="fromCurrency" required="required">
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="required" for="toCurrency">To:</label>
+                    <select class="form-control" id="toCurrency" required="required">
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="required" for="currencyAmount">Amount:</label>
+                <input class="form-control" type="number" id="currencyAmount" value="1" required="required">
+            </div>
+
+            <div>
+                <label for="convertedCurrency">Result:</label>
+                <output class="form-control" id="convertedCurrency" name="convertedCurrency" for="currencyAmount">Result:</output>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer container">
+        <p class="text-center">Copyright (c) 2018 David C. Onoh</p>
+    </footer>
+</body>
+
+</html>
